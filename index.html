@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+
+    <form>
+
+        <div>
+            <label for="nombreUsuario">First Name: *</label> <!-- posiciona el cursor dentro del input -->
+            <input type="text" name="nombreUsuario" id="nombreUsuario" required>
+        </div>
+        <div>
+            <label for="apellidoUsuario">Last Name: *</label> <!-- posiciona el cursor dentro del input -->
+            <input type="text" name="apellidoUsuario" id="apellidoUsuario" required>
+        </div>
+        <div>
+            <label for="email">Email Address: *</label> <!-- posiciona el cursor dentro del input -->
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="paswordUsuario">Pasword: *</label> <!-- posiciona el cursor dentro del input -->
+            <input type="password" name="paswordUsuario" id="paswordUsuario" required>
+        </div>
+        <div>
+            <label for="paswordUsuarioconfir">Confirm Pasword: *</label> <!-- posiciona el cursor dentro del input -->
+            <input type="password" name="paswordUsuarioconfir" id="paswordUsuarioconfir" required>
+        </div>
+        <div>
+            <label for="fecha">Birthday:</label> <!-- posiciona el cursor dentro del input -->
+            <input type="date" name="fecha" id="fecha">
+        </div>
+        <h3>Gender Identity:</h3>
+
+        <div>
+            <label for="edad">Male</label> <!-- posiciona el cursor dentro del input -->
+            <input type="radio" id="masculino" name="genero">
+            <label for="edad">Female</label> <!-- posiciona el cursor dentro del input -->
+            <input type="radio" id="femenino" name="genero">
+            <label for="edad">Non-binary</label> <!-- posiciona el cursor dentro del input -->
+            <input type="radio" id="non" name="genero">
+            <label for="edad">I prefer not to answer</label> <!-- posiciona el cursor dentro del input -->
+            <input type="radio" id="non" name="answer">
+        </div>
+        <div>
+            <h4 for="comentario">A short description about myself:</h4>
+            <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="pais">Favorite lenguage: </label> <!-- posiciona el cursor dentro del input -->
+            <select name="lenguaje" id="lenguaje">
+                <option value="js">Javascript</option>
+                <option value="html">Html</option>
+                <option value="py">Python</option>
+                <option value="c">C#</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="checkbox" id="acept" name="acept">
+            <label for="html">Yes, I would like to receive periodic email updates</label>
+        </div>
+        
+
+        <div>
+            <button type="submit" id="enviar">
+                Create Acount
+            </button>
+        </div>
+<h5>Indicates a required field</h5>
+    </form>
+</body>
+
+</html>
